@@ -13,19 +13,19 @@ The story, mechanics, and content are still evolving.
 ## 🚀 Getting Started
 
 Clone the repository:
-   ```sh
-   git clone https://github.com/toivoantero/sigland-and-irkuying-game.git
-   ```
+```sh
+git clone https://github.com/toivoantero/sigland-and-irkuying-game.git
+```
 
 Install dependencies:
-    ```
-    npm install
-    ```
+```sh
+npm install
+```
 
 Run the development server:
-    ```
-    npm run dev
-    ```
+```sh
+npm run dev
+```
 
 Open the URL shown in the terminal (usually http://localhost:5173).
 
