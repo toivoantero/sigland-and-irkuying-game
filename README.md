@@ -1,26 +1,32 @@
-# Sigland & Irkuying: the Game
+# Sigland & Irkuying Game
 
-Yksinkertainen seikkailupeli, joka perustuu minulla pitkään kehitteillä olleeseen tarinaan ja fiktiiviseen maailmaan. Projekti hyödyntää tekoälyä ohjelmoinnin tukena osassa kehitystä.
+A browser-based adventure game based on an original story world I have been developing for a long time.  
+The project serves both as a game prototype and a learning project.
 
-## 🎮 Mikä tämä on
+## 🎮 About
 
-Peli on selainpohjainen seikkailupeli rakennettu **Reactilla ja TypeScriptillä** Vite-ympäristössä.  
-Pelin tarina, mekaniikka ja maailma ovat työn alla ja tarkoitettu paitsi peliksi myös oppimisprojektiksi sekä koodinäytteeksi.
+Sigland & Irkuying Game is built with **React** and **TypeScript** using **Vite**.  
+The focus is on world-building, gameplay experimentation, and clean, maintainable code.
 
-## 🚀 Pikaohje
+The story, mechanics, and content are still evolving.
 
-1. Klonaa repo:
+## 🚀 Getting Started
+
+Clone the repository:
    ```sh
    git clone https://github.com/toivoantero/sigland-and-irkuying-game.git
+   ```
 
-2. Asenna riippuvuudet:
+Install dependencies:
+    ```sh
+    npm install
+    ```
 
-npm install
+Run the development server:
+    ```sh
+    npm run dev
+    ```
 
-3. Käynnistä kehityspalvelin:
-
-npm run dev
-
-4. Avaa selain ja siirry osoitteeseen, jonka Vite näyttää (yleensä http://localhost:5173)
+Open the URL shown in the terminal (usually http://localhost:5173).
 
 
