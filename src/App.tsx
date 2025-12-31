@@ -6,12 +6,12 @@ import characterLeft1 from './kuvat/character_left1.png';
 import characterLeft2 from './kuvat/character_left2.png';
 import characterLeft3 from './kuvat/character_left3.png';
 
-const TILE_SIZE = 16;
+const TILE_SIZE = 32;
 const VIEW_WIDTH = 20;
 const VIEW_HEIGHT = 15;
 const MAP_WIDTH = 100;
 const MAP_HEIGHT = 100;
-const MOVE_SPEED = 2; // px per frame
+const MOVE_SPEED = 1; // px per frame
 
 function clamp(val: number, min: number, max: number) {
   return Math.max(min, Math.min(max, val));
@@ -116,6 +116,14 @@ export default function App() {
       setPos(prev => {
         let newX = prev.x + dx * MOVE_SPEED;
         let newY = prev.y + dy * MOVE_SPEED;
+
+        // Tarkistetaan vain hahmon alareunan keskikohta
+        const footX = Math.floor((newX + TILE_SIZE / 2) / TILE_SIZE);
+        const footY = Math.floor((newY + TILE_SIZE - 2) / TILE_SIZE); // -2 jotta jalka on hieman ylempänä kuin aivan alareunassa
+
+        if (map[footY]?.[footX] === 1) {
+          return prev;
+        }
         newX = clamp(newX, 0, MAP_WIDTH * TILE_SIZE - 1);
         newY = clamp(newY, 0, MAP_HEIGHT * TILE_SIZE - 1);
         return { x: newX, y: newY };
@@ -250,8 +258,8 @@ export default function App() {
         style={{
           border: "2px solid #444",
           imageRendering: "pixelated",
-          width: (VIEW_WIDTH * TILE_SIZE * 2) + "px",
-          height: (VIEW_HEIGHT * TILE_SIZE * 2) + "px"
+          width: (VIEW_WIDTH * TILE_SIZE * 1) + "px",
+          height: (VIEW_HEIGHT * TILE_SIZE * 1) + "px"
         }}
         tabIndex={0}
       />
