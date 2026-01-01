@@ -1,14 +1,6 @@
 # Sigland & Irkuying Game
 
-A browser-based adventure game based on an original story world I have been developing for a long time.  
-The project serves both as a game prototype and a learning project.
-
-## 🎮 About
-
-Sigland & Irkuying Game is built with **React** and **TypeScript** using **Vite**.  
-The focus is on world-building, gameplay experimentation, and clean, maintainable code.
-
-The story, mechanics, and content are still evolving.
+A browser-based adventure game set in an original story world I have been developing over a long period of time. The game is built with **React** and **TypeScript** using **Vite**. Its goal is to explore web development technologies through a fun and visually engaging project. The story, mechanics, and content are still evolving.
 
 ## 🚀 Getting Started
 
